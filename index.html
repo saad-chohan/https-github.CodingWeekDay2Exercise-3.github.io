@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Coding Week Day2 Exercise-3</h1>
+    <h3>Write a JavaScript program to find the largest of three given Numbers.</h3>
+    <h1 id="result"></h1>
 </body>
+<script>
+var x = prompt("Write a JavaScript program to find the largest of three given Numbers.","Number 1")
+var y = prompt("Write a JavaScript program to find the largest of three given Numbers.","Number 2")
+var z = prompt("Write a JavaScript program to find the largest of three given Numbers.","Number 3")
+function max_of_three(x,y,z)
+ {
+  max_val = 0;
+  if (x > y)
+  {
+    max_val = x;
+  } else
+  {
+    max_val = y;
+  }
+  if (z > max_val) 
+  {
+    max_val = z;
+  }
+  return Number(max_val);
+}
+ var result = ("Answer"+ max_of_three(Number(x),Number(y),Number(z)))
+
+ document.getElementById("result").innerText = result;
+
+
+</script>
 </html>
